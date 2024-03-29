@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>customplantplace</class>
+ <widget class="QWidget" name="customplantplace">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1134</width>
+    <height>462</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>30</y>
+     <width>821</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="scrollAreaWidgetContents">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>819</width>
+      <height>349</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1191</width>
+       <height>351</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="textedit"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>400</y>
+     <width>801</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="infodisplayhere">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="updateplant">
+      <property name="text">
+       <string>更新植物列表</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="deleteplant">
+      <property name="text">
+       <string>删除选中的植物</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="plantplace">
+      <property name="text">
+       <string>确认</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="clear">
+      <property name="text">
+       <string>清空</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="exitbutton">
+      <property name="text">
+       <string>退出</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="forminfo">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>0</y>
+     <width>821</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>文本格式：植物类型编号 行 列 血量 攻速；数字之间可用任意非数字字符隔开，先后顺序不能错，否则会出错。</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="realmoniter">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>17</y>
+     <width>92</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>实时监控</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="includeblood">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>389</y>
+     <width>124</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>包含血量信息</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="formtostr">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>204</y>
+     <width>124</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>阵型转字符串</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="planttype">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>93</y>
+     <width>92</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>植物类型</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="customplace">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>278</y>
+     <width>108</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自定义种植</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>54</y>
+     <width>139</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>功能菜单</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="strtoform">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>241</y>
+     <width>124</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>字符串转阵型</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="blood">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>130</y>
+     <width>92</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>植物血量</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="setshine">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>315</y>
+     <width>92</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>设置发光</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="includeinterval">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>426</y>
+     <width>124</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>包含攻速信息</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="isrealtime">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>352</y>
+     <width>124</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>实时血量更新</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="attackinterval">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>167</y>
+     <width>124</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>植物攻击间隔</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
