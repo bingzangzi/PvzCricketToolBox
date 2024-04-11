@@ -1,0 +1,59 @@
+#ifndef ZOMBIESOPERATION_H
+#define ZOMBIESOPERATION_H
+#include <QThread>
+#include <thread>
+#include <chrono>
+#include <QMutex>
+#include <QWaitCondition>
+#include "game_info.h"
+#include "plantsoperation.h"
+struct ZombieInfoStruct{
+    int type;
+    int row;
+    int col;
+    float x;
+    float y;
+    int id;
+    int bodyblood;
+    bool isarmor1;
+    bool isarmor2;
+    bool ishypnoed;
+    bool isvisible;
+    bool isneardead;
+    bool iseatgarlic;
+    bool isinwater;
+    bool isnohand;
+    int armorblood1;
+    int armorblood2;
+    int armortype_1;
+    int armortype_2;
+    int status;
+    int shingingtime;
+    int frozentime;
+    int buttertime;
+    int slowingtime;
+    int armorshiningtime;
+    int armorshaketime;
+    int initbodyblood;
+    int initarmor_1blood;
+    int initarmor_2blood;
+    uint32_t addr;
+    QDateTime findtime;
+    QDateTime deadtime;
+};
+struct DeadZombieStruct{
+    int type;
+    int row;
+    int initbodyblood;
+    int initarmor_1blood;
+    int initarmor_2blood;
+    bool ishypno;
+    QDateTime findtime;
+    QDateTime deadtime;
+};
+
+void KillAllZombies();
+void PutZombie(int,vector<int>,vector<int>);
+void PutRandZombie_randmode(bool,int,float,uint32_t);
+void SingleZombiePut(ZombieInfoStruct zom,uint32_t addr);
+#endif // ZOMBIESOPERATION_H
